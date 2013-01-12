@@ -1,14 +1,15 @@
 extends layout
 
 block content
-  .social_buttons
-  .inset
-      a.fb.login_button(href='/facebook/login/?next=%2F')
-        .logo_wrapper
-          span.logo
-        span Login with Facebook
-    .inset
-      a.tw.login_button(href='/twitter/?next=%2F')
-        .logo_wrapper
-          span.logo
-        span Login with Twitter
+  .centered-div
+    .logo
+      img(src='images/big_logo.png')
+      .row(id='social')
+        p
+          span
+            a(href='/results')
+              img(id='facebook', src='images/facebook_button.png')
+          span
+            a(href='/results')
+              img(id='twitter', src='images/twitter_button.png')
+

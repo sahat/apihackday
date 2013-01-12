@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  .centered-div
+    form.form-horizontal
+      .control-group
+        input#inputEmail(type='text', placeholder='First Name')
+      .control-group
+        input#inputPassword(type='text', placeholder='Last Name')
+      .control-group
+        input#inputEmail(type='text', placeholder='Email')
+
+
+
+
+        .control-group
+          .controls
+            label.checkbox
+              input(type='checkbox')
+              | Do you have an idea?
+            button.btn(type='submit') Sign in
