@@ -73,6 +73,7 @@ app.get('/results', function (req, res) {
       request('https://api.singly.com/profiles?verify=true&access_token='+token, function (error, response, body) {
         
         var parsed_body = JSON.parse(body);
+        console.log(parsed_body);
         res.render('results', {
           session: parsed_body
         });

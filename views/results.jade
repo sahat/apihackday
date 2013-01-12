@@ -13,7 +13,7 @@ block content
         .nav-collapse.collapse
           p.navbar-text.pull-right
             | Logged in as
-            a.navbar-link(href='#') #{session} 
+            a.navbar-link(href='#') #{session.facebook[0].profile.name} 
   .container-fluid
     .row-fluid
       .span3
