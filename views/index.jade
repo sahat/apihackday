@@ -1,5 +1,14 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .social_buttons
+  .inset
+      a.fb.login_button(href='/facebook/login/?next=%2F')
+        .logo_wrapper
+          span.logo
+        span Login with Facebook
+    .inset
+      a.tw.login_button(href='/twitter/?next=%2F')
+        .logo_wrapper
+          span.logo
+        span Login with Twitter

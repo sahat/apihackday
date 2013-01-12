@@ -1,20 +1,14 @@
 !!! 5
 html(lang='en')
 head
-    meta(charset='utf-8')
-    title Hackathon Team Organizer
-    link(href='stylesheets/bootstrap.css', rel='stylesheet')
-   	link(href='stylesheets/style.css', rel='stylesheet')
+  meta(charset='utf-8')
+  title Hackathon Team Organizer
+  link(href='stylesheets/bootstrap.min.css', rel='stylesheet')
+  link(href='stylesheets/style.css', rel='stylesheet')
 body
 .container
-  form.form-signin
-    h2.form-signin-heading Please sign in
-    input.input-block-level(type='text', placeholder='Email address')
-    input.input-block-level(type='password', placeholder='Password')
-    label.checkbox
-      input(type='checkbox', value='remember-me')
-      | Remember me
-    button.btn.btn-large.btn-primary(type='submit') Sign in
+  block content
+
 
 script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js')
 script(src='javascripts/bootstrap.min.js)
