@@ -74,7 +74,7 @@ app.get('/results', function (req, res) {
         
         var parsed_body = JSON.parse(body);
         res.render('results', {
-          session: body
+          session: parsed_body
         });
 
       });
