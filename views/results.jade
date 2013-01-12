@@ -13,12 +13,15 @@ block content
         .nav-collapse.collapse
           p.navbar-text.pull-right
             | Logged in as
-            a.navbar-link(href='#') Username
-  .container-fluid
-    .row-fluid
+            a.navbar-link(href='#') #{session.facebook.name} 
+  .container
+    .row
       .span3
-        .well.sidebar-nav
+        .sidebar-nav
           ul.nav.nav-list
+            li.nav-header Hackathon
+            li(id='current_hackathon')
+              img(src='images/hackathon.png')
             li.nav-header Developer
             li(id='ruby')
               a(href='#') Ruby
@@ -28,6 +31,8 @@ block content
               a(href='#') JavaScript
             li(id='php')
               a(href='#', id='php') PHP
+            li
+              input.input-medium(type='text', placeholder='add another')
             
             li.nav-header Designer
             li(id='photoshop')
@@ -89,6 +94,3 @@ block content
               | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
             p
               a.btn(href='#') View details »
-      hr
-      footer
-        p © Company 2012
