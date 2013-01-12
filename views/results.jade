@@ -61,48 +61,110 @@ block content
           img(src='images/singlyeventbritelogo.png')
           img(src='images/ikanoweventbritelogo.png')
           img(src='images/sendgridlogo.png')
-
+          
+        .modal.hide.fade(id='myModal')
+          .modal-header
+            button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+            h3 User Stats
+          .modal-body
+            p
+              strong Skills:
+              |  PHP, CSS, HTML, JavaScript, Ruby on Rails
+            p 
+              strong Description: 
+              |  My first hackathon!!!
+          .modal-footer
+            a.btn(href='#') Close
+            a.btn.btn-primary(href='#') Save changes
+  
+  
         .row-fluid
-          div.hackgroup.span4
+          div.hackgroup.span4(id='group1')
             div.photo-row
-              img(src="images/placeholder.png")
-              img(src="images/placeholder.png")
-              img(src="images/placeholder.png")
-              img(src="images/placeholder.png")
-            h2 Hack Group
+              a(href='#myModal', role='button', data-toggle='modal')
+                img(src="images/placeholder.png")
+              a(href='#myModal', role='button', data-toggle='modal')
+                img(src="images/placeholder.png")
+              a(href='#myModal', role='button', data-toggle='modal')
+                img(src="images/placeholder.png")
+              a(href='#myModal', role='button', data-toggle='modal')
+                img(src="images/placeholder.png")
+            h2 Food For Devs!
             p
               | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
             div.button-row.clearfix
               a.btn(href='#') Details »
               a.btn.btn-primary(href='#') Join »
-          .span4
-            h2 Heading
+              
+          div.hackgroup.span4(id='group2')
+            div.photo-row
+              a(href='#myModal', role='button', data-toggle='modal')
+                img(src="images/placeholder.png")
+              a(href='#myModal', role='button', data-toggle='modal')
+                img(src="images/placeholder.png")
+            h2 Hackity Hack
             p
               | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-            p
-              a.btn(href='#') View details »
-          .span4
-            h2 Heading
+            div.button-row.clearfix
+              a.btn(href='#') Details »
+              a.btn.btn-primary(href='#') Join »
+              
+          div.hackgroup.span4(id='group3')
+            div.photo-row
+              a(href='#myModal', role='button', data-toggle='modal')
+                img(src="images/placeholder.png")
+              a(href='#myModal', role='button', data-toggle='modal')
+                img(src="images/placeholder.png")
+              a(href='#myModal', role='button', data-toggle='modal')
+                img(src="images/placeholder.png")
+            h2 Ruby Soho
             p
               | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-            p
-              a.btn(href='#') View details »
+            div.button-row.clearfix
+              a.btn(href='#') Details »
+              a.btn.btn-primary(href='#') Join »
         .row-fluid
-          .span4
-            h2 Heading
+          div.hackgroup.span4(id='group4')
+            div.photo-row
+              a(href='#myModal', role='button', data-toggle='modal')
+                img(src="images/placeholder.png")
+              a(href='#myModal', role='button', data-toggle='modal')
+                img(src="images/placeholder.png")
+              a(href='#myModal', role='button', data-toggle='modal')
+                img(src="images/placeholder.png")
+              a(href='#myModal', role='button', data-toggle='modal')
+                img(src="images/placeholder.png")
+            h2 Food For Devs!
             p
               | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-            p
-              a.btn(href='#') View details »
-          .span4
-            h2 Heading
+            div.button-row.clearfix
+              a.btn(href='#') Details »
+              a.btn.btn-primary(href='#') Join »
+
+          div.hackgroup.span4(id='group5')
+            div.photo-row
+              a(href='#myModal', role='button', data-toggle='modal')
+                img(src="images/placeholder.png")
+              a(href='#myModal', role='button', data-toggle='modal')
+                img(src="images/placeholder.png")
+            h2 Hackity Hack
             p
               | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-            p
-              a.btn(href='#') View details »
-          .span4
-            h2 Heading
+            div.button-row.clearfix
+              a.btn(href='#') Details »
+              a.btn.btn-primary(href='#') Join »
+
+          div.hackgroup.span4(id='group6')
+            div.photo-row
+              a(href='#myModal', role='button', data-toggle='modal')
+                img(src="images/placeholder.png")
+              a(href='#myModal', role='button', data-toggle='modal')
+                img(src="images/placeholder.png")
+              a(href='#myModal', role='button', data-toggle='modal')
+                img(src="images/placeholder.png")
+            h2 Ruby Soho
             p
               | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-            p
-              a.btn(href='#') View details »
+            div.button-row.clearfix
+              a.btn(href='#') Details »
+              a.btn.btn-primary(href='#') Join »

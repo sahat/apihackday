@@ -84,11 +84,11 @@ p span {
 	float: right;
 }
 
-.hackgroup .photo-row img {
+.hackgroup .photo-row a {
 	margin-right: 1px;
 }
 
-.hackgroup .photo-row img:last-of-type {
+.hackgroup .photo-row a:last-of-type {
 	margin-right: 0;
 }
 
