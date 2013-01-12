@@ -12,8 +12,9 @@ block content
           img(src='images/little_logo.png')
         .nav-collapse.collapse
           p.navbar-text.pull-right
-            | Logged in as
-            a.navbar-link(href='#') #{session.facebook[0].profile.name} 
+            img(src='#{session.facebook[0].profile.picture.data.url}')
+
+            a.navbar-link(href='#')  #{session.facebook[0].profile.name} 
   .container-fluid
     .row-fluid
       .span3
