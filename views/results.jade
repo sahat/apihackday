@@ -12,9 +12,9 @@ block content
           img(src='images/little_logo.png')
         .nav-collapse.collapse
           p.navbar-text.pull-right
-            img(src='#{session.facebook[0].profile.picture.data.url}')
+            img(src='https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/157141_100000588912346_1949363080_q.jpg')
 
-            a.navbar-link(href='#')  #{session.facebook[0].profile.name} 
+            a.navbar-link(href='#')  Sahat Yalkabov
   .container-fluid
     .row-fluid
       .span3
@@ -42,14 +42,10 @@ block content
               a(href='#') Illustrator
             li(id='frontend')
               a(href='#') Frontend Design
+            li
+              input.input-medium(type='text', placeholder='add another')
 
-            li.nav-header Sidebar
-            li
-              a(href='#') Link
-            li
-              a(href='#') Link
-            li
-              a(href='#') Link
+
       .span9
         .hero-unit
           h2 API Sponsors
@@ -74,8 +70,9 @@ block content
               strong Description: 
               |  My first hackathon!!!
           .modal-footer
-            a.btn(href='#') Close
-            a.btn.btn-primary(href='#') Save changes
+            a.btn.btn-primary(href='#')
+              i.icon-comment.icon-white
+              |  Send Message
   
   
         .row-fluid
@@ -97,7 +94,7 @@ block content
               a.btn.btn-primary(href='#') Join »
               
           div.hackgroup.span4(id='group2')
-            div.photo-row
+            div.photo-row(id='photorow_group2')
               a(href='#myModal', role='button', data-toggle='modal')
                 img(src="images/placeholder.png")
               a(href='#myModal', role='button', data-toggle='modal')
@@ -107,7 +104,7 @@ block content
               | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
             div.button-row.clearfix
               a.btn(href='#') Details »
-              a.btn.btn-primary(href='#') Join »
+              a.btn.btn-primary(href='#', id='join_group2') Join »
               
           div.hackgroup.span4(id='group3')
             div.photo-row
