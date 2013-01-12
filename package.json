@@ -7,6 +7,11 @@
   },
   "dependencies": {
     "express": "3.0.6",
-    "jade": "*"
+    "jade": "*",
+    "querystring": "*",
+    "request": "2.9.203",
+    "sprintf": "*",
+    "express-partials": "*",
+    "express-singly": "*"
   }
 }
