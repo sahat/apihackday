@@ -66,6 +66,32 @@ p span {
 	border-radius: 8px;
 }
 
+.hackgroup {
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+	padding: 4px;
+}
+
+.hackgroup h2 {
+	margin: 0 0 9px 0;
+}
+
+.hackgroup .button-row .btn {
+	float: left;
+}
+
+.hackgroup .button-row .btn-primary {
+	float: right;
+}
+
+.hackgroup .photo-row img {
+	margin-right: 1px;
+}
+
+.hackgroup .photo-row img:last-of-type {
+	margin-right: 0;
+}
+
 /*
 input[type="text"] {
   background: rgba(0,0,0,0.6);
