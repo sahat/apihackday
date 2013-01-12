@@ -92,3 +92,7 @@ line-height: 16px;
 height: 35px;
 }
 */
+
+.hero-unit img {
+  padding: 5px;
+}
