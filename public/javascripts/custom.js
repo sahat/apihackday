@@ -2,21 +2,32 @@ $(document).ready(function() {
     $('#ruby').click(function() {
       $(this).toggleClass('active');
       console.log('done');
+      $('#group1').hide();
+      $('#group3').hide();
+      $('#group4').hide();
+      $('#group5').hide();
+      $('#group6').hide();
+      return false
     });
 
     $('#python').click(function() {
       $(this).toggleClass('active');
       console.log('done');
+      $('#group1').show();
+  	  $('#group3').show();
     });
 
     $('#php').click(function() {
       $(this).toggleClass('active');
+      $('#group4').show();
+      $('#group5').show();
       console.log('done');
     });
 
     $('#javascript').click(function() {
       $(this).toggleClass('active');
       console.log('done');
+      $('#group6').show();
     });
 
     $('#photoshop').click(function() {
